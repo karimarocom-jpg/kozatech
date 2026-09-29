@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koza | Construction &amp; Specialized Works – Ternat, Belgium</title>
+<meta name="description" content="Koza is a Belgian company (BV) based in Ternat, active in demolition, site preparation and specialized construction works, and publisher of mobile apps.">
+<style>
+:root{--navy:#14213d;--navy2:#1f3157;--amber:#f59e0b;--bg:#f5f6f8;--card:#fff;--text:#1e2533;--muted:#5b6475;--line:#e2e5eb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{background:var(--navy);position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.4rem;letter-spacing:2px}
+.logo i{width:34px;height:34px;background:var(--amber);color:var(--navy);display:grid;place-items:center;border-radius:6px;font-style:normal;font-size:1.2rem}
+nav{display:flex;align-items:center;gap:22px}
+nav a{color:#d5dbe8;text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--amber)}
+.lang{position:relative}
+.lang .cur{background:none;border:1px solid #3a4c76;border-radius:6px;color:#fff;padding:6px 12px;cursor:pointer;font-weight:600;font-size:.88rem;display:flex;align-items:center;gap:8px}
+.lang .cur:hover,.lang.open .cur{border-color:var(--amber);color:var(--amber)}
+.lang .cur:after{content:"";border:4px solid transparent;border-top-color:currentColor;margin-top:4px}
+.lang .menu{display:none;position:absolute;right:0;top:calc(100% + 8px);min-width:170px;list-style:none;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.25);overflow:hidden;z-index:20}
+.lang.open .menu{display:block}
+.lang .menu button{width:100%;text-align:left;background:none;border:0;padding:11px 16px;cursor:pointer;font:inherit;font-size:.92rem;color:var(--text)}
+.lang .menu button:hover{background:#f1f3f7}
+.lang .menu button.on{background:#fff4dc;font-weight:700;color:var(--navy)}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-80px;top:0;bottom:0;width:340px;background:repeating-linear-gradient(-45deg,var(--amber) 0 18px,transparent 18px 36px);opacity:.14}
+.hero h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.15;max-width:700px}
+.hero h1 span{color:var(--amber)}
+.hero p{max-width:600px;margin:20px 0 32px;color:#cfd7e8;font-size:1.1rem}
+.btn{display:inline-block;background:var(--amber);color:var(--navy);padding:13px 28px;border-radius:6px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:#ffb52e}
+.btn.ghost{background:none;color:#fff;border:2px solid #fff;margin-left:12px;padding:11px 26px}
+section{padding:76px 0}
+h2{font-size:2rem;color:var(--navy);margin-bottom:8px}
+h2:after{content:"";display:block;width:56px;height:4px;background:var(--amber);margin-top:10px;border-radius:2px}
+.lead{color:var(--muted);max-width:700px;margin:18px 0 34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px;border-top:4px solid var(--amber)}
+.card h3{color:var(--navy);margin-bottom:8px;font-size:1.1rem}
+.card p{color:var(--muted);font-size:.95rem}
+.alt{background:#fff}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:28px}
+.facts div{background:var(--bg);border-left:4px solid var(--navy);padding:14px 18px;border-radius:4px}
+.facts b{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+form{display:grid;gap:14px}
+input,textarea{width:100%;padding:12px 14px;border:1px solid #cbd1dc;border-radius:6px;font:inherit;background:#fff}
+input:focus,textarea:focus{outline:2px solid var(--amber);border-color:var(--amber)}
+textarea{min-height:130px;resize:vertical}
+.info p{margin-bottom:16px}.info b{display:block;color:var(--navy)}
+.info a{color:var(--navy2);font-weight:600}
+footer{background:var(--navy);color:#b7c0d3;padding:38px 0;font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer a{color:var(--amber);text-decoration:none;margin-right:18px}
+footer a:hover{text-decoration:underline}
+@media(max-width:760px){.two{grid-template-columns:1fr}nav a{display:none}.btn.ghost{margin:12px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="logo" href="#home"><i>K</i>KOZA</a>
+  <nav>
+    <a href="#home" data-i18n="nav_home">Home</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+    <div class="lang" id="lang"><button class="cur" id="curBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><span id="curLbl">EN</span></button><ul class="menu"><li><button data-l="en">🇬🇧 English</button></li><li><button data-l="nl">🇧🇪 Nederlands</button></li><li><button data-l="es">🇪🇸 Español</button></li></ul></div>
+  </nav>
+</div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+  <h1 data-i18n="h1">Building with <span>precision</span> and reliability.</h1>
+  <p data-i18n="hero_p">Koza is a Belgian company based in Ternat, delivering demolition, site preparation and specialized construction works, and publishing simple, privacy-friendly mobile apps.</p>
+  <a class="btn" href="#contact" data-i18n="cta1">Contact us</a><a class="btn ghost" href="#about" data-i18n="cta2">Learn more</a>
+</div></div>
+
+<section class="alt"><div class="wrap">
+  <h2 data-i18n="s_title">What we do</h2>
+  <p class="lead" data-i18n="s_lead">Our registered activities cover a range of construction disciplines, complemented by our digital products.</p>
+  <div class="grid">
+    <div class="card"><h3 data-i18n="s1t">Demolition</h3><p data-i18n="s1p">Safe and organized demolition of buildings and structures.</p></div>
+    <div class="card"><h3 data-i18n="s2t">Site preparation</h3><p data-i18n="s2p">Clearing and preparing land so projects can start on solid ground.</p></div>
+    <div class="card"><h3 data-i18n="s3t">Specialized construction</h3><p data-i18n="s3p">Masonry, tiling, plastering, joinery, glazing and waterproofing works.</p></div>
+    <div class="card"><h3 data-i18n="s4t">Mobile apps</h3><p data-i18n="s4p">Lightweight apps published on Google Play that collect no personal data.</p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2 data-i18n="a_title">About Koza</h2>
+  <p class="lead" data-i18n="a_p1">Koza is a limited liability company (Besloten Vennootschap) registered in Belgium since 2007 and active in the construction sector. We value quality workmanship, clear communication and respect for our clients' time and privacy.</p>
+  <p class="lead" data-i18n="a_p2" style="margin-top:-14px">Today we also develop and publish mobile applications, applying the same principles: simple, dependable and transparent about data.</p>
+  <div class="facts">
+    <div><b data-i18n="f1">Legal name</b>Koza</div>
+    <div><b data-i18n="f2">Legal form</b><span data-i18n="f2v">Besloten Vennootschap (BV)</span></div>
+    <div><b data-i18n="f3">Enterprise no.</b>0891.103.168</div>
+    <div><b data-i18n="f4">Registered since</b>2007</div>
+    <div><b data-i18n="f5">Headquarters</b>Ternat, Belgium</div>
+  </div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+  <h2 data-i18n="c_title">Contact</h2>
+  <p class="lead" data-i18n="c_lead">Have a question or a project in mind? Get in touch and we will reply as soon as possible.</p>
+  <div class="two">
+    <div class="info">
+      <p><b data-i18n="c_addr">Address</b>Koza<br>Assesteenweg 116 PB A<br>1740 Ternat, Belgium</p>
+      <p><b data-i18n="c_mail">Email</b><a href="mailto:contact@kozatech.online">contact@kozatech.online</a></p>
+      <p><b data-i18n="c_tel">Phone</b><a href="tel:+34617981859">+34 617 981 859</a></p>
+    </div>
+    <form id="cf">
+      <input id="n" required data-ph="ph_n" placeholder="Your name">
+      <input id="e" type="email" required data-ph="ph_e" placeholder="Your email">
+      <textarea id="m" required data-ph="ph_m" placeholder="Your message"></textarea>
+      <button class="btn" type="submit" data-i18n="send">Send message</button>
+      <small style="color:var(--muted)" data-i18n="note">This opens your email app. Nothing is stored on this website.</small>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap foot">
+  <div>© <span id="y"></span> Koza · Assesteenweg 116 PB A, 1740 Ternat, Belgium<br><span data-i18n="rights">All rights reserved.</span></div>
+  <div><a href="privacy-policy.html" data-i18n="pp">Privacy Policy</a><a href="privacy-policy.html#mobile" data-i18n="pp_m">Mobile Apps Privacy Policy</a></div>
+</div></footer>
+
+<script>
+const D={
+nl:{nav_home:"Home",nav_about:"Over ons",nav_contact:"Contact",h1:"Bouwen met <span>precisie</span> en betrouwbaarheid.",hero_p:"Koza is een Belgisch bedrijf uit Ternat, actief in sloopwerken, terreinvoorbereiding en gespecialiseerde bouwwerken, en uitgever van eenvoudige, privacyvriendelijke mobiele apps.",cta1:"Neem contact op",cta2:"Meer info",s_title:"Wat we doen",s_lead:"Onze geregistreerde activiteiten omvatten verschillende bouwdisciplines, aangevuld met onze digitale producten.",s1t:"Sloopwerken",s1p:"Veilige en georganiseerde sloop van gebouwen en constructies.",s2t:"Terreinvoorbereiding",s2p:"Terreinen bouwrijp maken zodat projecten op een stevige basis kunnen starten.",s3t:"Gespecialiseerde bouwwerken",s3p:"Metsel-, tegel-, pleister-, schrijnwerk-, glas- en waterdichtingswerken.",s4t:"Mobiele apps",s4p:"Lichte apps op Google Play die geen persoonsgegevens verzamelen.",a_title:"Over Koza",a_p1:"Koza is een besloten vennootschap, sinds 2007 geregistreerd in België en actief in de bouwsector. Wij hechten belang aan kwaliteitsvol werk, duidelijke communicatie en respect voor de tijd en privacy van onze klanten.",a_p2:"Vandaag ontwikkelen en publiceren we ook mobiele applicaties, met dezelfde principes: eenvoudig, betrouwbaar en transparant over gegevens.",f1:"Juridische naam",f2:"Rechtsvorm",f2v:"Besloten Vennootschap (BV)",f3:"Ondernemingsnr.",f4:"Geregistreerd sinds",f5:"Hoofdzetel",c_title:"Contact",c_lead:"Heeft u een vraag of een project? Neem contact op en we antwoorden zo snel mogelijk.",c_addr:"Adres",c_mail:"E-mail",c_tel:"Telefoon",ph_n:"Uw naam",ph_e:"Uw e-mailadres",ph_m:"Uw bericht",send:"Bericht versturen",note:"Dit opent uw e-mailprogramma. Er wordt niets opgeslagen op deze website.",rights:"Alle rechten voorbehouden.",pp:"Privacybeleid",pp_m:"Privacybeleid mobiele apps"},
+en:{nav_home:"Home",nav_about:"About",nav_contact:"Contact",h1:"Building with <span>precision</span> and reliability.",hero_p:"Koza is a Belgian company based in Ternat, delivering demolition, site preparation and specialized construction works, and publishing simple, privacy-friendly mobile apps.",cta1:"Contact us",cta2:"Learn more",s_title:"What we do",s_lead:"Our registered activities cover a range of construction disciplines, complemented by our digital products.",s1t:"Demolition",s1p:"Safe and organized demolition of buildings and structures.",s2t:"Site preparation",s2p:"Clearing and preparing land so projects can start on solid ground.",s3t:"Specialized construction",s3p:"Masonry, tiling, plastering, joinery, glazing and waterproofing works.",s4t:"Mobile apps",s4p:"Lightweight apps published on Google Play that collect no personal data.",a_title:"About Koza",a_p1:"Koza is a limited liability company (Besloten Vennootschap) registered in Belgium since 2007 and active in the construction sector. We value quality workmanship, clear communication and respect for our clients' time and privacy.",a_p2:"Today we also develop and publish mobile applications, applying the same principles: simple, dependable and transparent about data.",f1:"Legal name",f2:"Legal form",f2v:"Besloten Vennootschap (BV)",f3:"Enterprise no.",f4:"Registered since",f5:"Headquarters",c_title:"Contact",c_lead:"Have a question or a project in mind? Get in touch and we will reply as soon as possible.",c_addr:"Address",c_mail:"Email",c_tel:"Phone",ph_n:"Your name",ph_e:"Your email",ph_m:"Your message",send:"Send message",note:"This opens your email app. Nothing is stored on this website.",rights:"All rights reserved.",pp:"Privacy Policy",pp_m:"Mobile Apps Privacy Policy"},
+es:{nav_home:"Inicio",nav_about:"Nosotros",nav_contact:"Contacto",h1:"Construimos con <span>precisión</span> y fiabilidad.",hero_p:"Koza es una empresa belga con sede en Ternat, dedicada a demolición, preparación de terrenos y obras especializadas de construcción, y editora de aplicaciones móviles sencillas y respetuosas con la privacidad.",cta1:"Contáctenos",cta2:"Saber más",s_title:"Qué hacemos",s_lead:"Nuestras actividades registradas abarcan varias disciplinas de la construcción, complementadas con nuestros productos digitales.",s1t:"Demolición",s1p:"Demolición segura y organizada de edificios y estructuras.",s2t:"Preparación de terrenos",s2p:"Despeje y acondicionamiento del terreno para iniciar proyectos sobre una base sólida.",s3t:"Construcción especializada",s3p:"Obras de albañilería, alicatado, revoco, carpintería, acristalamiento e impermeabilización.",s4t:"Aplicaciones móviles",s4p:"Apps ligeras publicadas en Google Play que no recopilan datos personales.",a_title:"Sobre Koza",a_p1:"Koza es una sociedad de responsabilidad limitada (Besloten Vennootschap) registrada en Bélgica desde 2007 y activa en el sector de la construcción. Valoramos el trabajo bien hecho, la comunicación clara y el respeto por el tiempo y la privacidad de nuestros clientes.",a_p2:"Hoy también desarrollamos y publicamos aplicaciones móviles, con los mismos principios: sencillez, fiabilidad y transparencia con los datos.",f1:"Razón social",f2:"Forma jurídica",f2v:"Besloten Vennootschap (BV)",f3:"N.º de empresa",f4:"Registrada desde",f5:"Sede",c_title:"Contacto",c_lead:"¿Tiene una pregunta o un proyecto? Escríbanos y le responderemos lo antes posible.",c_addr:"Dirección",c_mail:"Correo electrónico",c_tel:"Teléfono",ph_n:"Su nombre",ph_e:"Su correo electrónico",ph_m:"Su mensaje",send:"Enviar mensaje",note:"Se abrirá su aplicación de correo. Este sitio web no almacena nada.",rights:"Todos los derechos reservados.",pp:"Política de privacidad",pp_m:"Política de privacidad de apps móviles"}
+};
+function setLang(l){
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-i18n]").forEach(e=>{const v=D[l][e.dataset.i18n];if(v!==undefined)e.innerHTML=v});
+  document.querySelectorAll("[data-ph]").forEach(e=>e.placeholder=D[l][e.dataset.ph]);
+  document.querySelectorAll(".lang .menu button").forEach(b=>b.classList.toggle("on",b.dataset.l===l));document.getElementById("curLbl").textContent=LB[l];
+  try{localStorage.setItem("koza-lang",l)}catch(e){}
+}
+const LB={en:"🇬🇧 EN",nl:"🇧🇪 NL",es:"🇪🇸 ES"};
+const LG=document.getElementById("lang"),CB=document.getElementById("curBtn");
+CB.onclick=e=>{e.stopPropagation();const o=LG.classList.toggle("open");CB.setAttribute("aria-expanded",o)};
+document.addEventListener("click",()=>{LG.classList.remove("open");CB.setAttribute("aria-expanded",false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")LG.classList.remove("open")});
+document.querySelectorAll(".lang .menu button").forEach(b=>b.onclick=()=>{setLang(b.dataset.l);LG.classList.remove("open")});
+document.getElementById("y").textContent=new Date().getFullYear();
+document.getElementById("cf").onsubmit=e=>{e.preventDefault();
+  const n=document.getElementById("n").value,em=document.getElementById("e").value,m=document.getElementById("m").value;
+  location.href="mailto:contact@kozatech.online?subject="+encodeURIComponent("Website contact – "+n)+"&body="+encodeURIComponent(m+"\n\n"+n+" ("+em+")");
+};
+let l="en";try{l=localStorage.getItem("koza-lang")||(({nl:"nl",es:"es"})[(navigator.language||"").slice(0,2)]||"en")}catch(e){}
+setLang(l);
+</script>
+</body>
+</html>
